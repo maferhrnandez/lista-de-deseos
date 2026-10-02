@@ -310,7 +310,8 @@ dialog::backdrop{background:rgba(40,6,14,.55)}
   /* ------------------------------------------------------------------ *
    *  Configuración                                                      *
    * ------------------------------------------------------------------ */
-  const SB_URL = String(window.SUPABASE_URL || '').trim();
+  // Acepta la URL aunque se pegue con /rest/v1/ u otra ruta al final.
+  const SB_URL = String(window.SUPABASE_URL || '').trim().replace(/\/(rest|auth|storage|realtime)\/v1.*$/i, '').replace(/\/+$/, '');
   const SB_KEY = String(window.SUPABASE_KEY || '').trim();
   const BUCKET = 'regalos';      // bucket de fotos creado por supabase.sql
   const MAX_PHOTO = 1000;        // px del lado más largo al subir
