@@ -12,7 +12,7 @@
      Supabase > Project Settings > API (o botón "Connect")
      ===================================================================== -->
 <script>
-  window.SUPABASE_URL = "https://pqynyengnzqfzhrbnwpu.supabase.co/rest/v1/";
+  window.SUPABASE_URL = "https://pqynyengnzqfzhrbnwpu.supabase.co";
   window.SUPABASE_KEY = "sb_publishable_Uu3HO98ej7npJCXoshJ3bw_NjFGuFty";
 </script>
 <!-- ===================================================================== -->
